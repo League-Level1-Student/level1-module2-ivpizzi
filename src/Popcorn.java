@@ -70,8 +70,10 @@ public class Popcorn
 	public static void main(String[] args)
 	{
 		Microwave microwave = new Microwave();
-		Popcorn popcorn = new Popcorn("salt");
-		
+		Popcorn popcorn = new Popcorn("buttery, salty");
+		microwave.putInMicrowave(popcorn);
+		microwave.setTime(2);
+		microwave.startMicrowave();
 	}
 
 	private void pause()
